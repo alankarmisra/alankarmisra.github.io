@@ -3,11 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-
+  <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>
 
     Alankar Misra &middot; Full Stack Developer
@@ -15,20 +13,20 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="./styles.css">
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
-  <link rel="shortcut icon" href="/public/favicon.ico">
+  <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico"> -->
 
   <!-- RSS -->
-  <link rel="alternate" type="application/atom+xml" title="Alankar Misra" href="/atom.xml">
+  <!-- <link rel="alternate" type="application/atom+xml" title="Alankar Misra" href="/atom.xml"> -->
 </head>
 
 
 <body>
 
-  <div class="container content">
+  <div id="app" class="container content">
     <header class="masthead">
       <h3 class="masthead-title">
         <a href="/" title="Home">Alankar Misra</a><br />
@@ -59,13 +57,18 @@
       </div>
     </main>
 
-    <footer class="footer">
-      <small>
-        &copy; <time>2022</time>. All rights reserved.
-      </small>
-    </footer>
+    <site-footer class="footer"></site-footer>
   </div>
+  <!-- Import App -->
+  <script src="./main.js"></script>
 
+  <!-- Import Components -->
+  <script src="./components/SiteFooter.js"></script>
+
+  <!-- Mount App -->
+  <script>
+    const mountedApp = app.mount('#app')
+  </script>
 </body>
 
 </html>
