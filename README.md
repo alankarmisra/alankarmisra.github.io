@@ -1,3 +1,3 @@
-# Work in Progress
+# Redirect
 
-A personal testament to my existence will eventually appear here. 
+I did it. I finally built my portfolio site. This page merely redirects there.
